@@ -1,0 +1,27 @@
+head
+block styles
+  link(rel='shortcut icon', type='image/png', href='img/favicon.ico')
+  link(rel='canonical', href='https://getbootstrap.com/docs/5.0/examples/dashboard/')
+  // Bootstrap core CSS
+  link(href='css/bootstrap.min.css', rel='stylesheet', integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl', crossorigin='anonymous')
+  link(rel="stylesheet" href="/css/all.css") 
+  // Custom styles for this template
+  link(href='css/dashboard.css', rel='stylesheet')
+  
+title Microsoft To Do  
+header.navbar.navbar-dark.sticky-top.bg-dark.flex-md-nowrap.p-0.shadow
+  a.navbar-brand.col-md-3.col-lg-2.me-0.px-3(href='#') Microsoft To Do
+ 
+  form.search(action='/myday', style='margin:auto;max-width:300px')
+      input(type='text', placeholder='Ara..')
+  ul.navbar-nav.px-3
+    li.nav-item.text-nowrap
+      a.nav-link(
+        href='/logout',
+        isAuthenticated: req.session.isAuthenticated       
+        ) Çıkış
+script(src='js/bootstrap.bundle.min.js', integrity='sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0', crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js', integrity='sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE', crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js', integrity='sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha', crossorigin='anonymous')
+script(src='/js/all.js')
+ 

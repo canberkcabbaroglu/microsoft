@@ -1,0 +1,28 @@
+extends ../layouts/main-layout.pug 
+
+block styles
+    link(rel="stylesheet" href="/css/style.css") 
+    
+block content
+ 
+
+    form(action="/register" method="POST")
+        .imgcontainer
+            img.avatar(src='img/logo.png', alt='Avatar')
+        .container
+        if errorMessage
+            div.alert.alert-danger #{errorMessage}
+        label(for='name')
+            b İsim
+        input(type='text', name='name', required='')
+        label(for='email')
+            b Email Adresi
+        input(type='text', name='email', required='')
+        label(for='password')
+            b Şifre
+        input(type='password', name='password', required='')
+        .container
+            .row
+                button Kayıt Ol
+                a.btn.btn-primary.stretched-link(href='http://localhost:3000/login') Vazgeç    
+                

@@ -1,0 +1,21 @@
+extends ../account/home.pug 
+
+ 
+    
+block content   
+    main.col-md-9.ms-sm-auto.col-lg-10.px-md-4
+      .d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.pt-3.pb-2.mb-3.border-bottom
+        h1.h2 Planlanan
+            br 
+            br
+            #todoApp.todo-app
+                #todoMenu1.todo-menu-1
+                    button#toggleAll.toggle-all
+                        span.rotate &#x276F;
+                    input#addTodoTextInput.add-todo-text-input(type='text', placeholder='Son tarihi bugün olan bir görev ekleyin',  autofocus='')
+                ul#todos.todos(aria-label='List of to do tasks')
+                #todoMenu2.todo-menu-2
+                    label#todosLeft.todos-left 
+                    #todoMenu2Buttons.todo-menu-2-buttons
+                        button#showUncompletedTodos.menu-2-button Planlanan
+        script(src='/js/todo.js')

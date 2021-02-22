@@ -1,0 +1,29 @@
+{
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@icon/font-awesome": "^4.7.0-2",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "connect-mongodb-session": "^2.4.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "feather-icons": "^4.28.0",
+    "mongodb": "^3.6.4",
+    "mongodb-store": "^0.1.1",
+    "mongoose": "^5.11.15",
+    "negotiator": "^0.6.2",
+    "pug": "^2.0.4",
+    "sequelize": "^4.44.4"
+  }
+}
