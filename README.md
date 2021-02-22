@@ -4,7 +4,8 @@
 
 3- npm start
 
-Sürüm sorunu olursa
+
+Sürüm sorunu olursa:
 
 npm uninstall mongodb --save
 
