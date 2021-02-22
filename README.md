@@ -7,4 +7,4 @@ sürüm sorunu olursa
 npm uninstall mongodb --save
 npm i mongodb@3.6.3
 
-localhost:3000 yazabilirsiniz
+Tarayıcı kısmına localhost:3000 yazarak projeye ulaşabilirsiniz.
