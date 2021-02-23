@@ -19,7 +19,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "feather-icons": "^4.28.0",
-    "mongodb": "^3.6.4",
+    "mongodb": "^3.6.3",
     "mongodb-store": "^0.1.1",
     "mongoose": "^5.11.15",
     "negotiator": "^0.6.2",
